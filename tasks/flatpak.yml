@@ -6,7 +6,7 @@
     method: user
 - name: Install the spotify flatpak
   flatpak:
-    name:  https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+    name:  com.spotify.Client
     state: present
 - name: Install the discord flatpak
   flatpak:
