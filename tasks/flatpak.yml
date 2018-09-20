@@ -1,0 +1,14 @@
+- name: Add the flathub remote to user installation
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    method: user
+- name: Install the spotify flatpak
+  flatpak:
+    name:  https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+    state: present
+- name: Install the discord flatpak
+  flatpak:
+    name: com.discordapp.Discord
+    state: present

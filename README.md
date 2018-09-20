@@ -2,8 +2,7 @@ Fedora-Workstation
 =========
 
 This role configures a fedora workstation install to have the packages and configuration files I prefer.
-It installs a set of packages both rpm and flatpak. It modifies .bash_profile, .tmux.conf, and .vimrc for powerline. It adds config file to polkit to enable sudo access through accounts accessed via freeipa. It uses 
-dconf to enable and configure gnome nightlight.
+It installs a set of packages both rpm and flatpak. It modifies .bash_profile, .tmux.conf, and .vimrc for powerline. It adds config file to polkit to enable sudo access through accounts accessed via freeipa. It uses dconf to enable and configure gnome nightlight. This role also configures fedora to use a yubikey for u2f and gpg.
 
 Requirements
 ------------
